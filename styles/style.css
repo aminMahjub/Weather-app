@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Kumbh+Sans:wght@300&family=Shippori+Antique&display=swap");
+html, body, div, span, object, iframe, button,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav {
+  list-style-type: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+  outline: none;
+}
+
+html[data-theme=dark] {
+  --textColor: #ffff;
+  --bg-site: #000;
+  --lightBtn: rgb(67, 46, 253);
+}
+
+html[data-theme=light] {
+  --textColor: #000;
+  --bg-site: #fff;
+  --lightBtn: rgb(255, 230, 0);
+}
+
+body {
+  background-color: var(--bg-site);
+}
+
+header {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.site-title {
+  font-weight: 600;
+  font-size: 40px;
+  font-style: normal;
+  color: var(--textColor);
+  padding-right: 60px;
+  background-image: url("data:image/png;base64,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");
+  background-repeat: no-repeat;
+  background-position: 240px 0px;
+  background-size: 50px;
+}
+
+.toggle-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.theme-status {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--textColor);
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 55px;
+  height: 30px;
+  background: var(--lightBtn);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+}
+
+input:checked + label {
+  background: var(--lightBtn);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 420ms !important;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 420ms !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+}
+
+section {
+  margin: 100px auto;
+  max-width: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#area-input {
+  width: 400px;
+  height: 40px;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+#area-input::-webkit-input-placeholder {
+  font-weight: 500;
+}
+
+#area-input:-ms-input-placeholder {
+  font-weight: 500;
+}
+
+#area-input::-ms-input-placeholder {
+  font-weight: 500;
+}
+
+#area-input::placeholder {
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

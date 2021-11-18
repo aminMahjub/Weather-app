@@ -1,0 +1,12 @@
+html[data-theme=dark] {
+  --textColor: #ffff;
+  --bg-site: #000;
+  --lightBtn: rgb(67, 46, 253);
+}
+
+html[data-theme=light] {
+  --textColor: #000;
+  --bg-site: #fff;
+  --lightBtn: rgb(255, 230, 0);
+}
+/*# sourceMappingURL=colors.css.map */
